@@ -97,8 +97,8 @@ h3 { font-size: var(--fs-h3) }
     font-size: var(--fs-h3);
 }
 
-.section__subtitle--about,
-.section__subtitle--story{
+.section__subtitle--right-me,
+.section__subtitle--left{
     background: var(--clr-accent);
     padding: .25em 1em;
     font-family: var(--ff-secondary);
@@ -120,17 +120,17 @@ header {
 /* About Me */
 
 
-.about-me {
+.right-me {
     max-width: 1000px;
     margin: 0 auto;
 }
 
-.about-me__img {
+.right-me__img {
     box-shadow: var(--bs);
 }
 
 @media (min-width: 600px) {
-    .about-me {
+    .right-me {
         display: grid;
         grid-template-columns: 1fr 200px;
         grid-template-areas:
@@ -140,11 +140,11 @@ header {
         grid-column-gap: 2em;
     }
 
-    .section__title--about {
+    .section__title--right-me {
         grid-area: title;
     }
 
-    .section__subtitle--about {
+    .section__subtitle--right-me {
         grid-column: 1 / -1;
         grid-row: 2;
         position: relative;
@@ -154,27 +154,27 @@ header {
         padding-right: calc(200px + 4em);
     }
 
-    .about-me__img {
+    .right-me__img {
         grid-area: img;
         position: relative;
         z-index: 2;
     }
 }
 
-/* Story */
+/* Left */
 
 
-.story {
+.left {
     max-width: 1000px;
     margin: 0 auto;
 }
 
-.story__img {
+.left__img {
     box-shadow: var(--bs);
 }
 
 @media (min-width: 600px) {
-    .story {
+    .left {
         display: grid;
         grid-template-columns: 200px 1fr;
         grid-template-areas:
@@ -184,11 +184,11 @@ header {
         grid-column-gap: 2em;
     }
 
-    .section__title--story {
+    .section__title--left {
         grid-area: title;
     }
 
-    .section__subtitle--story {
+    .section__subtitle--left {
         grid-column: 1 / -1;
         grid-row: 2;
         position: relative;
@@ -198,7 +198,7 @@ header {
         padding-left: calc(200px + 2.5em);
     }
 
-    .story__img {
+    .left__img {
         grid-area: img;
         position: relative;
         z-index: 2;
@@ -209,9 +209,7 @@ header {
 
 
 /*
-
 .section__subtitle--story {
-
     grid-column: 1 / -1;
     grid-row: 2;
     position: relative;
@@ -221,9 +219,7 @@ header {
     padding-left: 1em;
     padding-right: calc(100px + 4em);
     height: 70px;
-
 }
-
 */
 
 
